@@ -1,0 +1,153 @@
+* {
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2.ttl {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+/* header */
+
+#header {
+  padding: 32px;
+}
+
+#header h1 {
+  text-align: left;
+}
+
+#header #logo img {
+  width: 200px;
+}
+
+#header .top a img {
+  width: 40px;
+}
+
+#header .top{
+  display: flex;
+}
+
+#header .sns-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+#header .sns-btn {
+  display: flex;
+  gap: 4px;
+}
+
+#mainVisual img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+#main .icon {
+  text-align: center;
+}
+
+#main .icon img {
+  width: 80px;
+  height: 80px;
+}
+
+#main .ttl {
+  text-align: center;
+}
+
+#policy {
+  padding: 48px 32px 48px 32px;
+  line-height: 2;
+}
+
+/* service */
+
+#service {
+  padding: 32px;
+  padding-top: 0;
+}
+
+#service section {
+  padding-bottom: 32px;
+}
+
+#service h3.ttl {
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+#service p.ttl {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+#service p.icon {
+  padding-bottom: 8px;
+}
+
+#service p.text {
+ line-height: 2;
+}
+
+/* works */
+
+#works {
+  padding: 32px;
+}
+
+#works .photo img {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+#about {
+  padding: 32px;
+}
+
+#myIcon {
+  text-align: center;
+}
+
+#myIcon img{
+  width: 160px;
+  height: 160px;
+}
+
+/* tatsuki */
+
+#about p {
+  line-height: 2;
+}
+
+#about dt{
+  float: left;
+}
+
+#about dd{
+  margin-left: 80px;
+}
+
+#about h3 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  font-weight: normal;
+}
+
+/* footer */
+
+#footer {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #dcdcdc;
+}
