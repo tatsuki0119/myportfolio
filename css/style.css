@@ -5,6 +5,12 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
+  display: block
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 li {
@@ -20,51 +26,135 @@ h2.ttl {
   font-size: 40px;
 }
 
+h2.ttl,
+h3.ttl {
+  font-weight:normal;
+}
+
+span {
+  color: red;
+}
+
 /* header */
+
+header #pc-header {
+  display: none;
+}
 
 header {
   padding-bottom: 16px;
 }
 
 header h1 {
-  text-align: left;
-  padding: 8px;
+  margin: 16px 0px 16px 0px;
+  padding-left: 16px;
+  line-height: 0;
 }
 
-header #logo img {
-  width: 250px;
+header h1 img {
+  width: 220px;
 }
 
-header #menu li {
-  float: left;
-  width: 50%;
-  height: 40px;
+header .top-page-img {
+  animation-name: fade;
+  animation-duration: 1.0s;
+  animation-delay: 1.0s;
+  animation-fill-mode: both;
+}
+
+header #menu ul {
+  display: flex;
+}
+
+header #menu ul li {
+  width: 100%;
   border: 1px solid #d9d9d9;
   text-align: center;
+  padding: 8px;
+  font-size: 14px;
 }
 
-#header .sns-btn li {
-  float: left;
+header #menu.top ul li:nth-child(1) {
+  animation-name: fade;
+  animation-duration: 1.0s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+header #menu.top ul li:nth-child(2) {
+  animation-name: fade;
+  animation-duration: 1.0s;
+  animation-delay: 2.0s;
+  animation-fill-mode: both;
+}
+
+header #menu.top ul li:nth-child(3) {
+  animation-name: fade;
+  animation-duration: 1.0s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+
+header .sns-btn {
+  text-align: center;
+  padding-top: 16px;
+}
+
+header .sns-btn li {
+  display: inline-block;
+}
+
+header .sns-btn.top li:nth-child(1) {
+  animation-name: fade;
+  animation-duration: 1.0s;
+  animation-delay: 3.0s;
+  animation-fill-mode: both;
+}
+
+header .sns-btn.top li:nth-child(2) {
+  animation-name: fade;
+  animation-duration: 1.0s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both;
 }
 
 header .sns-btn img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 /* main */
 
-#mainVisual img {
+/* top */
+
+#top #sp-mainVisual img,
+#top #pc-mainVisual img {
   width: 100%;
+}
+
+#top img {
+  animation-name: fade;
+  animation-duration: 1.0s;
+  animation-delay: 4.0s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#top #pc-mainVisual {
+  display: none;
+  text-align: center;
 }
 
 #main .icon {
   text-align: center;
-}
-
-#main .icon img {
-  width: 80px;
-  height: 80px;
 }
 
 #main .ttl {
@@ -72,7 +162,9 @@ header .sns-btn img {
 }
 
 #policy {
-  padding: 48px 32px 48px 32px;
+  padding: 0px 32px 0px 32px;
+  margin-top: 140px;
+  margin-bottom: 140px;
   line-height: 2;
 }
 
@@ -97,8 +189,10 @@ header .sns-btn img {
   padding-bottom: 8px;
 }
 
-#service p.icon {
-  padding-bottom: 8px;
+#service p.icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 8px;
 }
 
 #service p.text {
@@ -109,27 +203,30 @@ header .sns-btn img {
 
 #works {
   padding: 32px;
+  text-align: center;
 }
 
-#works .photo img {
+#works img {
   width: 100%;
   margin-bottom: 32px;
 }
 
-#about {
-  padding: 32px;
-}
-
-#myIcon {
+#btn {
   text-align: center;
 }
 
-#myIcon img{
-  width: 160px;
-  height: 160px;
+button.work {
+  border: #666 1px solid;
+  padding: 8px;
+  border-radius: 2px;
 }
 
 /* tatsuki */
+
+#about {
+  margin-top: 80px;
+  padding: 32px;
+}
 
 #about p {
   line-height: 2;
@@ -145,8 +242,43 @@ header .sns-btn img {
 
 #about h3 {
   padding-top: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   font-weight: normal;
+}
+
+#myIcon {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#myIcon img{
+  width: 100px;
+  height: 100px;
+}
+
+#about #myname p {
+  line-height: 1.5;
+}
+
+button.about {
+  margin-top: 24px;
+  border: #666 1px solid;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+/* to-top */
+
+#to-top {
+  text-align: center;
+}
+
+#to-top img {
+  width: 40px;
+  height: 30px;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 
 /* footer */
@@ -156,4 +288,281 @@ header .sns-btn img {
   padding-top: 32px;
   padding-bottom: 32px;
   background: #dcdcdc;
+}
+
+/* pages */
+
+#work-img {
+  text-align: center;
+  padding-top: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+
+#work-img>img {
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 32px;
+}
+
+#work-text {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#work-text img {
+  width: 20px;
+  vertical-align: top;
+}
+
+#work-text h3 {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+#work-text p {
+  padding-top: 8px;
+  font-size: 13px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#pageNation a {
+  font-size: 13px;
+}
+
+#pageNation {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+#pageNation .prev {
+  position: absolute;
+  left: 0px;
+}
+
+#pageNation .next {
+  position: absolute;
+  right: 0px;
+}
+
+/* animate */
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .3s, transform .3s;
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
+
+/* contact */
+
+#form-desc {
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 48px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form {
+  padding-left: 32px;
+  padding-right: 32px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input {
+  width: 300px;
+}
+
+form input,
+form textarea {
+  border: black 1px solid;
+  margin-bottom: 16px;
+}
+
+form #submit-btn {
+  border: none;
+  padding: 16px 24px 16px 24px;
+  background: #dcdcdc;
+  width: 200px;
+} 
+
+
+@media (min-width: 760px) {
+
+  header #sp-header {
+    display: none;
+  }
+
+  header #pc-header {
+    display: block;
+    max-width: 1064px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  header #pc-header h1 img {
+    width: 320px;
+  }
+
+  header #pc-header ul {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  header #pc-header ul li {
+    float: right;
+    padding: 24px;
+  }
+
+  header #pc-header .a1 {
+    animation-name: fade;
+    animation-duration: 1.0s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+  }
+
+  header #pc-header .a2 {
+    animation-name: fade;
+    animation-duration: 1.0s;
+    animation-delay: 2.0s;
+    animation-fill-mode: both;
+  }
+
+  header #pc-header .a3 {
+    animation-name: fade;
+    animation-duration: 1.0s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+  }
+
+  header #pc-header .a4 {
+    animation-name: fade;
+    animation-duration: 1.0s;
+    animation-delay: 3.0s;
+    animation-fill-mode: both;
+  }
+
+  header #pc-header .a5 {
+    animation-name: fade;
+    animation-duration: 1.0s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+  }
+
+  header #pc-header .pc-sns-btn img {
+    width: 25px;
+    height: 25px;
+  }
+
+  #top #sp-mainVisual {
+    display: none;
+  }
+
+  #top #pc-mainVisual {
+    display: block;
+  }
+
+  #top #policy {
+    width: 500px;
+    text-align: center;
+    margin: 140px auto 140px auto;
+    animation-name: fade;
+    animation-duration: 1.0s;
+    animation-delay: 4.5s;
+    animation-fill-mode: both;
+  }
+  
+  #service {
+    display: flex;
+    max-width: 1064px;
+    margin: 0 auto;
+    gap: 40px;
+    padding-bottom: 140px;
+  }
+
+  #service section {
+    width: 100%;
+  }
+
+  #works {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1064px;
+    margin: 0 auto;
+  }
+
+  #works ul {
+    font-size: 0;
+  }
+
+  #works li {
+    display: inline-block;
+    width: calc((100% - 144px) / 3);
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  #works li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  #works li:last-child {
+    margin-right: 0;
+  }
+
+  #works img {
+    margin-bottom: 0;
+  }
+
+  #btn {
+    margin-bottom: 140px;
+  }
+
+  #about #story {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  #about #pc-about {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 32px;
+  }
+
+  #about #pc-about #myIcon {
+    padding-right: 80px;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  #about #pc-about #myIcon img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #about #myname {
+    text-align: center;
+  }
+
+  /* pagaes */
+  
+  #work-text p {
+    font-size: 16px;
+  }
+
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content='webプログラマー"樹"の個人サイトです'>
+    <title>Contact｜TATSUKI'sROOM</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <!-- sp-header -->
+      <div id="sp-header">
+        <h1 id="logo">
+          <a href="https://tatsuki100.com/">
+            <img src="img/logo.png" alt="TATSUKI'sROOM">
+          </a>
+        </h1>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="works.html">Works</a>
+            </li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="sns-btn">
+          <li>
+            <a href="https://www.instagram.com/tatsuki_100/" target="_blank">
+              <img src="img/instagram.png" alt="インスタグラムのロゴです">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100023449245094" target="_blank">
+              <img src="img/facebook.png" alt="フェイスブックのロゴです">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- pc-header -->
+      <div id="pc-header">
+        <h1 id="logo">
+          <a href="https://tatsuki100.com/">
+            <img src="img/logo.png" alt="TATSUKI'sROOM">
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <div class="pc-sns-btn">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100023449245094" target="_blank">
+                  <img src="img/facebook.png" alt="フェイスブックのロゴです">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/tatsuki_100/" target="_blank">
+                  <img src="img/instagram.png" alt="インスタグラムのロゴです">
+                </a>
+              </li>
+            </div>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="works.html">Works</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div>　</div>
+        <div>　</div>
+        <div>　</div>
+      </div>
+    </header>
+
+    <main id="main">
+      <h2 class="ttl">Contact</h2>
+      <p id="form-desc">ホームページ制作のご依頼・ご相談などお気軽にお問い合わせください。分かる範囲のご入力で構いません。ご送信後１〜２営業日以内にご連絡させて頂きます。</p>
+
+      <form action="#" method="post">
+        <!-- ↑ここにPHPのファイル名が入る -->
+        <p>貴社名</p>
+        <input type="text" name="company-name">
+        <p>お名前<span>※</span></p>
+        <input type="text" name="name" required>
+        <p>メールアドレス<span>※</span></p>
+        <input type="email" name="e-mail" required>
+        <p>お電話番号</p>
+        <input type="tel" name="tel">
+        <p>お問い合わせ内容<span>※</span></p>
+        <textarea name="contact" id="" style="width:100%;" rows="10" required></textarea>
+        <p><input type="submit" id="submit-btn" value="送信する"></p>
+        <!-- ↑buttonタグとの違いを要検証 -->
+      </form>
+
+      <!-- top-return -->
+      <sevtion id="to-top">
+        <a href="#"><img src="img/top.png" alt=""></a>
+      </sevtion>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <p class="copyright">
+        <small>©︎TATSUKI All rights reserved.</small>
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
